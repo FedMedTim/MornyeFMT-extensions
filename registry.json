@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-01",
+  "extensions": [
+    {
+      "id": "fedmedtim.jamendo",
+      "name": "fedmedtim.jamendo",
+      "display_name": "Jamendo (Creative Commons)",
+      "version": "1.0.0",
+      "description": "Search and download Creative Commons music from Jamendo through its official API. Needs a free Jamendo API client ID.",
+      "download_url": "https://raw.githubusercontent.com/FedMedTim/MornyeFMT-extensions/main/dist/jamendo-1.0.0.mornye-ext",
+      "category": "download",
+      "tags": ["jamendo", "creative commons", "free music", "download", "search"],
+      "updated_at": "2026-11-01",
+      "min_app_version": "5.2.0",
+      "sha256": "707c24ceb4681cb73d067481f7de8e1b49cba5add4ab6417e1f57f1f78b5a2b9"
+    }
+  ]
+}

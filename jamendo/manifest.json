@@ -1,0 +1,38 @@
+{
+  "name": "fedmedtim.jamendo",
+  "displayName": "Jamendo (Creative Commons)",
+  "version": "1.0.0",
+  "author": "FedMedTim",
+  "description": "Search and download Creative Commons music from Jamendo through its official API. Only tracks whose artists allow downloads are offered. Needs a free Jamendo API client ID.",
+  "homepage": "https://github.com/FedMedTim/MornyeFMT-extensions",
+  "type": ["metadata_provider", "download_provider"],
+  "permissions": {
+    "network": ["api.jamendo.com", "*.jamendo.com", "*.newjamendo.com"],
+    "storage": true,
+    "file": true
+  },
+  "settings": [
+    {
+      "key": "client_id",
+      "type": "string",
+      "label": "Jamendo client ID",
+      "description": "Create a free app at devportal.jamendo.com and paste its client ID here.",
+      "required": true,
+      "secret": true
+    },
+    {
+      "key": "format",
+      "type": "select",
+      "label": "Download format",
+      "description": "Audio format Jamendo serves for downloads.",
+      "options": ["mp32", "ogg", "flac"],
+      "default": "mp32"
+    }
+  ],
+  "searchBehavior": {
+    "enabled": true,
+    "placeholder": "Search Creative Commons music on Jamendo",
+    "primary": false
+  },
+  "skipLyrics": true
+}
